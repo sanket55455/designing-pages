@@ -1,0 +1,28 @@
+.log-button {
+    border: 1px solid #a6a6a6;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(14, 12, 136);
+    color: white;
+    margin-top: 35px;
+}
+
+@media (min-width:320px) and (max-width:425px) {
+    .log-button {
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+}
+
+.background {
+    background-color: #3b5998;
+}
+
+input {
+    width: 100%;
+}
+
+.bgColor {
+    background-color: linear-gradient(#D3D8E8, rgb(187, 192, 211));
+}

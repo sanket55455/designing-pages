@@ -1,0 +1,163 @@
+.header {
+    display: inline-block;
+}
+
+.nav {
+    display: inline-block;
+    /* border: 1px solid gray; */
+}
+
+.left-nav {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.li {
+    display: inline-block;
+    margin: 10PX;
+}
+
+.li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.floatRight {
+    /* display: inline-block; */
+    padding: 0px;
+    margin: 0px;
+    padding-left: 935px;
+    float: right;
+}
+
+.imgDiv {
+    margin-left: 495px;
+    margin-top: 110px;
+}
+
+.inputBox {
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 11px;
+    /* height: 50px;
+    border: 1px solid gray;
+    padding: 5px;
+    margin-left: 450px; */
+}
+
+.input {
+    border: 1px;
+    width: 100%;
+    height: 90%;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.mike {
+    padding-left: 0px;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 34px;
+}
+
+.form {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    width: 500px;
+    border: 1px solid lightgrey;
+    margin-left: 411px;
+    box-shadow: 0px 4px 12px grey;
+}
+
+.anchor {
+    border: 0px solid gray;
+    width: 160px;
+    height: 100;
+    color: #757575;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    display: inline-block;
+    padding: 10px;
+    /* margin-left: 450px; */
+}
+
+.anchor:hover {
+    box-shadow: 0 2px 15px gray;
+    color: black;
+    font-weight: bold;
+}
+
+.dv1 {
+    display: inline-block;
+    margin-left: 455px;
+    text-align: center;
+}
+
+.dv2 {
+    display: inline-block;
+    margin-left: 47px;
+    text-align: center;
+}
+
+.mar {
+    margin-top: 40px;
+}
+
+.footer {
+    width: 1275px;
+    margin-top: 120px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    /* padding: 0px;
+    margin: 0px; */
+    color: #5D6166;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footSection {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footLeft-nav {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.footFloatRight {
+    /* display: inline-block; */
+    padding: 0px;
+    margin: 0px;
+    padding-left: 884px;
+    float: right;
+}
+
+.footDiv {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    height: 40px;
+    padding: 5px;
+    margin: 0px;
+}
+
+.lid {
+    display: inline-block;
+    margin: 10PX;
+}
+
+.lid:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.marg {
+    margin-left: 444px;
+    margin-top: 20px;
+}

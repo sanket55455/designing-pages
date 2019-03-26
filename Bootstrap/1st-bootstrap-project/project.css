@@ -1,0 +1,31 @@
+body {
+    font-family: 'Anton', sans-serif;
+}
+
+.height {
+    min-height: 100vh;
+}
+
+.title-underline {
+    width: 200px;
+    margin: 0 auto;
+    height: 10px;
+    /* background-color: blue !important; */
+}
+
+.height-80 {
+    min-height: 80vh;
+}
+
+.about-picture {
+    background: url(images/code-1076536_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#filler,
+#progress {
+    background: linear-gradient(rgb(0, 0, 0, .7), rgb(0, 0, 0, .7)), url(images/funny.jpg)center/cover no-repeat fixed;
+}

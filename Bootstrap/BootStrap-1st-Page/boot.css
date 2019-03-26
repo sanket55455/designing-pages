@@ -1,0 +1,33 @@
+.borderCon {
+    border: 3px solid gray;
+    background-color: rgb(149, 247, 234);
+}
+
+.colorDiv1 {
+    background-color: red;
+}
+
+.colorDiv2 {
+    background-color: green;
+}
+
+.colorDiv3 {
+    background-color: yellow;
+}
+
+.colorDiv4 {
+    background-color: orange;
+}
+
+.colorDiv5 {
+    background-color: purple;
+}
+
+.colorDiv6 {
+    background-color: pink;
+}
+
+.container1 {
+    border: 3px solid gray;
+    background-color: pink;
+}

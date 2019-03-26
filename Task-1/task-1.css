@@ -1,0 +1,322 @@
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .nav {
+        border-bottom: 1px solid rgb(233, 230, 230);
+        height: 70px;
+        box-shadow: 0px 2px 7px rgb(197, 193, 193);
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .div1 {
+        /* float: left; */
+        font-size: 20px;
+        padding: 23px;
+        display: inline-block;
+    }
+    
+    .div2 {
+        margin-left: 20px;
+        padding-left: 660px;
+        display: inline-block;
+    }
+    
+    .a1 {
+        margin-left: 20px;
+        font-size: 17px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .a1:hover {
+        text-decoration: underline;
+    }
+    
+    .sign-up {
+        margin-left: 20px;
+        width: 81px;
+        height: 38px;
+        color: #007bff;
+        background-color: white;
+        border: 2px solid #007bff;
+        text-align: center;
+        border-radius: 7px;
+        font-weight: bold;
+    }
+    
+    .sign-up:hover {
+        background-color: #007bff;
+        color: white;
+    }
+    
+    .mainDiv1 {
+        /* border: 1px solid black; */
+        width: 700px;
+        height: 206px;
+        margin-top: 43px;
+        margin-left: 277px;
+    }
+    
+    .h1 {
+        font-size: 65px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        color: #212529;
+    }
+    
+    .p {
+        padding-left: 46px;
+        width: 629px;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+    
+    .mainDiv2 {
+        /* border: 1px solid black; */
+        /* box-shadow: 0px 1px 5px rgb(194, 187, 187); */
+        width: 1010px;
+        height: 331px;
+        margin-top: 6px;
+        margin-left: 120px;
+    }
+    
+    .mainDiv3 {
+        /* border: 1px solid black; */
+        width: 285px;
+        height: 315px;
+        display: inline-block;
+        margin-left: 47px;
+        box-shadow: 0px 1px 5px rgb(194, 187, 187);
+    }
+    
+    .mainDiv4 {
+        width: 285px;
+        height: 315px;
+        display: inline-block;
+        margin-left: 47px;
+        box-shadow: 0px 1px 5px rgb(194, 187, 187);
+    }
+    
+    .mainDiv5 {
+        width: 285px;
+        height: 315px;
+        display: inline-block;
+        margin-left: 47px;
+        box-shadow: 0px 1px 5px rgb(194, 187, 187);
+    }
+    
+    .div3 {
+        /* border: 1px solid black; */
+        width: 285px;
+        height: 56px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .03);
+        margin: 0px;
+        padding: 0px;
+        box-shadow: 0px 1px 5px rgb(194, 187, 187);
+    }
+    
+    .divP {
+        font-size: 29px;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 15px;
+    }
+    
+    .div4 {
+        /* border: 1px solid black; */
+        width: 285px;
+        height: 56px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .03);
+        margin: 0px;
+        padding: 0px;
+        box-shadow: 0px 1px 5px rgb(194, 187, 187);
+    }
+    
+    .div5 {
+        /* border: 1px solid black; */
+        width: 285px;
+        height: 56px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .03);
+        margin: 0px;
+        padding: 0px;
+        box-shadow: 0px 1px 5px rgb(194, 187, 187);
+    }
+    
+    .div3-1 {
+        display: inline-block;
+    }
+    
+    .divH1 {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 95px;
+        padding-top: 15px;
+        font-size: 45px;
+    }
+    
+    .divH3 {
+        display: inline-block;
+        color: #6c757d;
+        font-size: 30px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    ul {
+        text-align: center;
+        list-style: none;
+    }
+    
+    li {
+        font-size: 20px;
+        color: #51565a;
+    }
+    
+    .signUp {
+        margin-left: 37px;
+        width: 212px;
+        height: 48px;
+        color: #007bff;
+        background-color: white;
+        border: 2px solid #007bff;
+        text-align: center;
+        border-radius: 7px;
+        font-weight: bold;
+        font-size: 19px;
+    }
+    
+    .signUp:hover {
+        background-color: #007bff;
+        color: white;
+    }
+    
+    .get-started {
+        margin-left: 37px;
+        width: 212px;
+        height: 48px;
+        color: white;
+        background-color: #007bff;
+        border: 2px solid #007bff;
+        text-align: center;
+        border-radius: 7px;
+        font-weight: bold;
+        font-size: 19px;
+    }
+    
+    .get-started:hover {
+        border: 2px solid #007bff;
+        background-color: #0657ad
+    }
+    
+    .contact {
+        margin-left: 37px;
+        width: 212px;
+        height: 48px;
+        color: white;
+        background-color: #007bff;
+        border: 2px solid #007bff;
+        text-align: center;
+        border-radius: 7px;
+        font-weight: bold;
+        font-size: 19px;
+    }
+    
+    .contact:hover {
+        border: 2px solid #007bff;
+        background-color: #0657ad
+    }
+    
+    footer {
+        width: 960px;
+        height: 320px;
+        border-top: 1px solid #c0cbe7;
+        margin-left: 164px;
+        margin-top: 50px;
+        /* box-shadow: 0px 1px 5px gray; */
+    }
+    
+    .footDiv {
+        width: 820px;
+        height: 250px;
+        /* border: 1px solid black; */
+        margin-left: 58px;
+        margin-top: 0px;
+        display: flex;
+        padding-top: 50px;
+    }
+    
+    .footDiv1 {
+        width: 140px;
+        height: 228px;
+        /* border: 1px solid black; */
+        display: inline-block;
+        margin-left: 0px;
+    }
+    
+    .footDiv2 {
+        width: 147px;
+        height: 228px;
+        /* border: 1px solid black; */
+        display: inline-block;
+        margin-left: 58px;
+    }
+    
+    .footDiv3 {
+        width: 140px;
+        height: 228px;
+        /* border: 1px solid black; */
+        display: inline-block;
+        margin-left: 80px;
+    }
+    
+    .footDiv4 {
+        width: 140px;
+        height: 228px;
+        /* border: 1px solid black; */
+        display: inline-block;
+        margin-left: 65px;
+    }
+    
+    .divH5 {
+        color: #212529;
+        font-size: 25px;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #6c757d;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .footLi {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+    }
+    
+    .footUl {
+        margin-bottom: 5px;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 30px;
+    }
+    
+    .footDivH5 {
+        margin: 0px;
+    }

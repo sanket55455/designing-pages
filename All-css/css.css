@@ -1,0 +1,352 @@
+table {
+    border-collapse: collapse;
+    margin-left: 230px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+th {
+    background-color: oldlace;
+}
+
+.c {
+    background-color: oldlace;
+}
+
+.div {
+    height: 300px;
+    color: red;
+    border: 1px solid black;
+    background: url("hp images/Untitled-1\ copy.jpg") repeat-x;
+}
+
+.pDiv {
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+.rDiv {
+    background-color: peachpuff;
+}
+
+.textAlign {
+    color: rgb(107, 5, 138);
+    text-align: center;
+}
+
+.parDiv {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.chaDiv {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+h2 {
+    counter-increment: num;
+}
+
+h3 {
+    counter-increment: sub;
+}
+
+h2:before {
+    content: counter(num) "";
+}
+
+h3:before {
+    content: counter(num)"." counter(sub)"";
+}
+
+h3:hover {
+    background-color: yellow;
+    color: red;
+}
+
+.shadow {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-shadow: 8px 8px 15px 5px yellow;
+}
+
+.innShadow {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px 3px rgb(236, 116, 46) inset;
+}
+
+.allShadow {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 7px rgb(5, 212, 167);
+}
+
+.s {
+    font-size: 37px;
+    text-shadow: 2px 2px 3px blue;
+}
+
+.p {
+    font-size: 37px;
+    text-shadow: 2px 2px 3px red;
+}
+
+.round {
+    box-shadow: 0px 0px 15px 7px rgb(5, 212, 167);
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.circle {
+    background-color: red;
+    box-shadow: 0px 0px 15px 7px rgb(5, 212, 167);
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+.lRound {
+    box-shadow: 0px 0px 15px 7px rgb(5, 212, 167);
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-top-left-radius: 30px;
+}
+
+.linear {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background: -webkit-linear-gradient(left, orange, white, green);
+    background: -moz-radial-gradient(orange 10%, white, green 70%);
+}
+
+.radial {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background: -webkit-radial-gradient(center, orange 10%, white, green 70%);
+    background: -moz-radial-gradient(orange 10%, white, green 70%)
+}
+
+.linearRepeat {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background: -webkit-repeating-linear-gradient(30deg, rgb(51, 255, 0) 20%, white 30%, rgb(235, 44, 19) 60%);
+    background: -moz-repeating-linear-gradient(left top, orange 20%, white 30%, green 60%);
+}
+
+.opacity {
+    background-color: red;
+    opacity: 0.7;
+    box-shadow: 0px 0px 15px 7px rgb(5, 212, 22);
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.opDiv {
+    top: 40px;
+    position: relative;
+}
+
+.scale {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.scale:hover {
+    background-color: red;
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.rotate:hover {
+    background-color: yellow;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.skew {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.skew:hover {
+    background-color: orange;
+    -moz-transform: skew(0deg, 0deg);
+    -webkit-transform: skew(25deg, 20deg);
+}
+
+.translate {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.translate:hover {
+    background-color: green;
+    -moz-transform: translate(20px, 20px);
+    -webkit-transform: translate(30px, 30px);
+}
+
+.transition {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: aqua;
+}
+
+.transition:hover {
+    background-color: blue;
+    border-radius: 30px;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+}
+
+.floatCen {
+    float: right;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: aqua;
+    /* -webkit-animation-name: Div;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s; */
+    -moz-animation-name: Div;
+    -moz-animation-duration: 4s;
+    -moz-animation-delay: 2s;
+    position: relative;
+}
+
+@-moz-keyframes Div {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+    25% {
+        top: 0px;
+        left: 250px;
+        background-color: blue;
+        -moz-transform: rotate(45deg);
+    }
+    50% {
+        top: -250px;
+        left: 250px;
+        background-color: yellow;
+        -moz-transform: scale(2);
+    }
+    75% {
+        top: -250px;
+        left: -0px;
+        background-color: purple;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: black;
+    }
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: aqua;
+    -webkit-animation-name: Div;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+    position: relative;
+}
+
+@-webkit-keyframes Div {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: red;
+    }
+    25% {
+        top: 0px;
+        left: 250px;
+        background-color: blue;
+        -webkit-transform: rotate(45deg);
+    }
+    50% {
+        top: -250px;
+        left: 250px;
+        background-color: yellow;
+        -webkit-transform: scale(2);
+    }
+    75% {
+        top: -250px;
+        left: -0px;
+        background-color: purple;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: black;
+    }
+}
+
+#container {
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+}
+
+#container {
+    display: -webkit-box;
+}
+
+.divCon1 {
+    -webkit-box-flex: 3;
+}
+
+.divCon2 {
+    -webkit-box-flex: 2;
+}
+
+.divCon3 {
+    -webkit-box-flex: 3;
+}
+
+.hide {
+    display: none;
+}

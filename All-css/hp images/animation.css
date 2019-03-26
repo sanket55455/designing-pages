@@ -1,0 +1,15 @@
+	
+
+   div{width:700px;height:200px;background:skyblue;}
+
+   	
+   {animation:myanimation 10s;}
+   {-webkit-animation:myanimation 10s;}   	
+
+  @keyframes myanimation
+  from{background:skyblue;}
+  to{background:red;}   	
+
+@-webkit-keyframes myanimation
+  from{background:skyblue;}
+  to{background:red;}   

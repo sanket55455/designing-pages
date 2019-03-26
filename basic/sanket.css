@@ -1,0 +1,111 @@
+.home {
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+.right {
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 1235px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+.rBottom {
+    background-color: green;
+    position: absolute;
+    top: 575px;
+    left: 1235px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+.lBottom {
+    background-color: green;
+    position: absolute;
+    top: 575px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+.centerDiv {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+    margin: 22.5% auto;
+}
+
+.mLeft {
+    background-color: green;
+    position: absolute;
+    top: 285px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+.mRight {
+    background-color: green;
+    position: absolute;
+    top: 285px;
+    left: 1235px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+.cLeft {
+    background-color: orangered;
+    display: inline-block;
+    position: absolute;
+    top: 289px;
+    left: 550px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+}
+
+.cRight {
+    background-color: orangered;
+    display: inline-block;
+    position: absolute;
+    top: 289px;
+    left: 698px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+}
+
+.cBottom {
+    background-color: orangered;
+    display: inline-block;
+    position: absolute;
+    top: 359px;
+    left: 624px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+}
+
+.cTop {
+    background-color: orangered;
+    display: inline-block;
+    position: absolute;
+    top: 220px;
+    left: 624px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+}

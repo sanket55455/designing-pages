@@ -1,0 +1,57 @@
+.togBtn {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px;
+    background-color: #434751;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    z-index: 3399999;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px;
+}
+
+.togBtn2 {
+    width: 100%;
+    padding-left: 31.5%;
+    margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width:425px) {
+    .togBtn2 {
+        padding-left: 2.5%;
+    }
+}
+
+@media (min-width: 320px) and (max-width:425px) {
+    .btnFooter {
+        width: 42% !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width:425px) {
+    .btnFooter1 {
+        width: 42% !important;
+    }
+}
+
+.btnFooter {
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 5px;
+    background: #f57c00;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    display: block;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}

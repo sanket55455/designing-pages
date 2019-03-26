@@ -1,0 +1,77 @@
+.mainDiv {
+    border: 1px solid #ebe8e8;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 0px 25px #bbb8b8;
+    margin-top: 150px;
+    margin-left: 400px;
+}
+
+.username {
+    border: 1px solid #dad5d5;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #bbb8b8;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.password {
+    border: 1px solid #dad5d5;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #bbb8b8;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.username:hover,
+.password:hover {
+    border: 1px solid #b22222;
+    box-shadow: 0px 0px 20px red;
+}
+
+.div1 {
+    margin: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.div2 {
+    margin: 15px;
+    margin-left: 40px;
+}
+
+.div3 {
+    margin: 15px;
+    margin-left: 40px;
+}
+
+.button {
+    border: 1px solid #a6a6a6;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(255, 48, 25);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: rgb(204, 0, 0);
+}
+
+#checkbox {
+    margin: 15px;
+    margin-left: 100px;
+}
+
+#checkbox:hover {
+    border: 1px dotted gray;
+}

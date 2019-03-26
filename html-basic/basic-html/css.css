@@ -1,0 +1,104 @@
+h1 {
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: rgb(247, 54, 6);
+}
+
+body {
+    background-color: aqua;
+}
+
+div#sp {
+    margin: auto;
+    background: white;
+    width: 1200px;
+    height: 1500px
+}
+
+
+/* p {
+    background-color: burlywood;
+    margin: 20px;
+} */
+
+header {
+    display: inline-block;
+    padding: 0px 0px 70px 0px;
+}
+
+#websiteLogo {
+    float: left;
+}
+
+#horzNav {
+    display: block;
+    padding: 30px 20px 10px 0px;
+    background: black;
+}
+
+#horNav a {
+    text-decoration: none;
+    padding: 0px 0px 0px 20xp;
+    color: white;
+}
+
+main {
+    padding: 10px 20px 20px 20px;
+}
+
+aside {
+    background-color: yellowgreen;
+}
+
+#uoListType {
+    list-style-type: square;
+}
+
+#oListType {
+    list-style-type: decimal-leading-zero;
+}
+
+#tableData {
+    width: 600px;
+    border: 3px solid black;
+}
+
+#tableData td,
+th {
+    border: 1px solid black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid red;
+}
+
+.dvBtn {
+    position: relative;
+    top: 20px;
+    left: 70px;
+    width: 55px;
+    height: 35px;
+    color: white;
+    background-color: blue;
+}
+
+.padding {
+    width: 350px;
+    height: 200px;
+    padding: 10px 10px 10px 20px;
+    background-color: tan;
+    border: 1px solid black;
+}
+
+li {
+    background-color: yellow;
+}
