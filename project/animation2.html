@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation2</title>
+    <style>
+     html, body { height: 100%; }
+     body {
+       background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+       overflow: hidden;
+      }
+
+    .ocean { 
+       height: 5%;
+       width:500%;
+       position: relative;;
+       bottom:0;
+       top: 400px;
+       left:-120px;
+     }
+    .wave {
+       background: #0af; 
+       position: absolute;
+       border-radius: 50%;
+       width: 8000px;
+       height: 900px;
+       margin-left: -120px;
+       animation-name: wave;
+       animation-duration: 5s;
+       animation-timing-function: ease-in-out;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       transform: translate3d(0, 0, 0);
+       opacity: .7;
+      }
+    @keyframes wave {
+      0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+
+    }
+    </style>
+</head>
+<body>
+    <div class="ocean">
+        <div class="wave"></div>
+    </div>
+</body>
+</html>

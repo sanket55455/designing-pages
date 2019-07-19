@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation1</title>
+</head>
+<style>
+  .div{
+     border-top: 5px solid blue;
+     border-right: 5px solid blue;
+     border-bottom: 5px solid transparent;
+     border-left: 5px solid transparent;
+     border-radius: 200px;
+     width: 200px;
+     height: 200px;
+     margin: 50px auto;
+     animation-name: rotate;
+     animation-duration: 1.5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+  }
+  @keyframes rotate{
+      from{
+          transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+  }
+  .div1{
+    background-image: url("images/natural.jpg");
+    background-size: cover;
+     border-radius: 195px;
+     width: 195px;
+     height: 195px;
+     margin: 3px auto;
+     animation-name: rotate1;
+     animation-duration: 1.5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+  }
+  @keyframes rotate1{
+      from{
+          transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(-360deg);
+      }
+  }
+</style>
+<body>
+    <div class="div">
+        <div class="div1"></div>
+    </div>
+</body>
+</html>

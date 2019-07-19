@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .div{
+         width: 849px;
+         height: 600px;
+         border: 1px solid gray;
+         background-image: linear-gradient(#5f7293,#bab9cb); 
+         margin: 10px 208px;
+         text-align: center;
+      }
+      .card{
+        width: 250px;
+        height: 188px;
+        margin: 122px 96px;
+        border: 1px solid white;
+        background-color: white; 
+        position: relative;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .d{
+          width:180px;
+          height: 50px;
+          margin: 50px auto;
+          border: 1px solid white;
+          color: #9baab2;
+          font-size: 15px;
+      }
+      .div1{
+        content: '';
+        width: 104px;
+        height: 78px;
+        margin: 247px auto;
+        border: 1px solid white;
+        background-color: white;
+        position: absolute;
+        top: -77px;
+        right: 0;
+        bottom: 0;
+        left: 145px;
+        transform: skewY(-46deg);
+        z-index: 3;
+        box-shadow: -3px 14px 11px 0px #9f8201;
+      }
+      .div2{
+        content: '';
+        width: 117px;
+        height: 38px;
+        margin: 243px auto;
+        border: 1px solid white;
+        background-color: white;
+        position: absolute;
+        top: 21px;
+        right: 106px;
+        bottom: 0;
+        left: 0;
+        transform: skewX(36deg);
+        z-index: 3;
+        box-shadow: -11px 10px 12px 0px #9f8201;
+      }
+      .div3{
+        content: '';
+        width: 178px;
+        height: 75px;
+        margin: 243px auto;
+        border: 1px solid white;
+        background-color: white;
+        position: absolute;
+        top: -55px;
+        right: 123px;
+        bottom: 0;
+        left: -1px;
+        z-index: 3;
+      }
+      .div4{
+        content: '';
+        width: 50px;
+        height: 58px;
+        margin: 243px auto;
+        border: 1px solid white;
+        background-color: white;
+        position: absolute;
+        top: -1px;
+        right: 10px;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+      }
+    .c{
+        width: 250px;
+        height: 243px;
+        margin: 36px -1px;
+        border: 1px solid transparent;
+        position: absolute;
+        background-color: #ffd202;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+        color:#44443a;
+        box-shadow: -1px 9px 12px 0px #504c41;
+         }
+    .card1{
+        width: 250px;
+        height: 188px;
+        margin: -410px 473px;
+        border: 1px solid white;
+        background-color: white; 
+        position: relative;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .div5{
+        content: '';
+        width: 104px;
+        height: 78px;
+        margin: 247px auto;
+        border: 1px solid white;
+        background-color: white;
+        position: absolute;
+        top: -77px;
+        right: 0;
+        bottom: 0;
+        left: 145px;
+        transform: skewY(-46deg);
+        z-index: 3;
+      }
+      .div6{
+        content: '';
+        width: 117px;
+        height: 38px;
+        margin: 243px auto;
+        border: 1px solid white;
+        background-color: white;
+        position: absolute;
+        top: 21px;
+        right: 106px;
+        bottom: 0;
+        left: 0;
+        transform: skewX(36deg);
+        z-index: 3;
+      }
+      .div7{
+        content: '';
+        width: 178px;
+        height: 75px;
+        margin: 243px auto;
+        border: 1px solid white;
+        background-color: white;
+        position: absolute;
+        top: -55px;
+        right: 123px;
+        bottom: 0;
+        left: -1px;
+        z-index: 3;
+      }
+      .div8{
+        content: '';
+        width: 50px;
+        height: 58px;
+        margin: 243px auto;
+        border: 1px solid white;
+        background-color: white;
+        position: absolute;
+        top: -1px;
+        right: 10px;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+      }
+      .c1{
+        width: 250px;
+        height: 243px;
+        margin: -19px -1px;
+        border: 1px solid #2b3946;
+        position: absolute;
+        background-color: #2b3946;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: -1px 9px 12px 0px #504c41;
+         }
+         input{
+            /* margin: 1px; */
+          border-left: none;
+          border-top: none;
+          border-right: none;
+          border-bottom: 1px solid gray;
+         }
+         .a1{
+          border-radius:50px;
+          border: 1px solid #e54227;
+          background-color: #e54227;
+          margin: 1px 5px;
+          width: 20px;
+          height: 20px;
+      }
+      .a2{
+          border-radius:50px;
+          border: 1px solid #4f71a7;
+          background-color: #4f71a7;
+          margin: -28px 39px;
+          width: 25px;
+          height: 25px;
+      }
+      .a3{
+          border-radius:50px;
+          border: 1px solid #20b7ee;
+          background-color: #20b7ee;
+          margin: -4px 79px;
+          width: 30px;
+          height: 30px;
+      }
+</style>
+</head>
+<body>
+    <div class="div" style="display:inline-block;">
+        <div class="card">
+            <div class="d">Follow the path you like, visit the places where you want to go with a guide.</div>
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            <div class="div4"></div>
+            <div class="c">
+                <h2 style="margin-top:165px;margin-left: -50px;">FOOT</h2>
+                <input type="button" value="GO AHEAD" style="float:right;border-radius:50px;margin-top:-50px;
+                width: 130px;height: 40px;margin-right: -68px;background-color: #6c7f9f;color: white;
+                border: 1px solid #6c7f9f;">
+            </div>
+        </div>
+       <div class="card1">
+            <h2 style="margin-top:60px;margin-left: -50px; color: #2a3b49;">SIGN IN</h2>
+            <p style="text-align:center; color: #2a3b49;margin-top: 50px;">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="User Name" style="border-color: #6c7f9f;"></p>
+                    <p style="text-align:center;color: #2a3b49;"><i class="fa fa-lock" aria-hidden="true"></i> 
+                    <input type="password" placeholder="password" style="border-color: #6c7f9f;border-bottom-color: transparent;
+                    margin-top: -30px;"></p>
+            <div class="div5"></div>
+            <div class="div6"></div>
+            <div class="div7"></div>
+            <div class="div8"></div>
+            <div class="c1">
+                    <div style="margin-top:170px;float:left;">
+                            <div class="a" style="display: inline-block;">
+                                <div class="a1"><p style="margin: 5px;text-align:center;font-size: 10px;
+                                color: white;"><i class="fa fa-google-plus" aria-hidden="true"></i></p></div>
+                                <div class="a2"><p style="margin: 5px;text-align:center;font-size: 18px;
+                                    color: white;"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                   </p></div>
+                                    <div class="a3"><p style="margin: 5px;text-align:center;font-size: 18px;
+                                        color: white;"> <i class="fa fa-twitter" aria-hidden="true"></i></p></div>
+                            </div>
+                    <input type="button" value="PROCEED" style="float:right;border-radius:50px;margin-top:-40px;
+                    width: 130px;height: 40px;margin-right: -68px;background-color: #6c7f9f;color: white;
+                    border: 1px solid #6c7f9f;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

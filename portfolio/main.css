@@ -1,0 +1,472 @@
+body{
+    background-color: rgb(187, 184, 184);
+}
+
+
+.shapeDiv{
+    background: url(images/DSC_1694.JPG);
+    background-size: cover;
+    background-size: 350px 300px;
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 300px;
+    border-radius: 0px 130px 0px;
+}
+.h2Des{
+    color: white;
+    font-style: italic;
+    margin-left:116px;
+    text-shadow:  2px 2px black; 
+}
+.name{
+    margin-top: 80px;
+    margin-left: 80px;
+    /* color: white; */
+    text-shadow:  2px 2px #FF0000; 
+}
+img{
+    float: right;
+    margin-top: 18px;
+}
+
+
+#wave {
+    position: relative;
+    height: 70px;
+    width: 600px;
+    background: #e0efe3;
+  }
+  #wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 340px;
+    height: 80px;
+    background-color: white;
+    right: -5px;
+    top: 40px;
+  }
+  #wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 300px;
+    height: 70px;
+    background-color: #e0efe3;
+    left: 0;
+    top: 27px;
+  }
+
+ 
+
+
+   /* nav and video banner */
+.navbar-area {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    margin-top: 0;
+    transition: .3s;
+}
+.navbar-scroll {
+    background: black;
+    color: white;
+	padding: 0;
+    transition-duration: 0.6s;
+}
+.nav-link:hover {
+    background-color: black;
+    text-decoration: underline;
+    border: 1px solid white;
+}
+.navbar-brand:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+/* .navbar-nav {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .navbar-nav .nav-link {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid red;
+  }
+  
+  .navbar-nav a.active {
+    border-bottom: 3px solid red;
+  } */
+.main-banner {
+    height: 900px;
+    position: relative;
+}
+.main-banner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .70;
+}
+#video-background {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+.d-table {
+    width: 100%;
+    height: 100%;
+    display: table!important;
+}
+.d-table-cell {
+    vertical-align: middle;
+}
+
+
+/* about */
+.hending{
+    width: 120px;
+    margin: 0 auto;
+    color: white;
+    background-color: #141414;
+    border: 5px solid white;
+    box-shadow: 0px 0px 8px 3px black;
+}
+.im:hover{
+       border: 5px solid black;
+}
+@media (max-width: 768px) {
+    .im{
+        width: 200px;
+        height: 200px;
+       
+    }
+  }
+
+.progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #b3b4b0;
+    font-size: 15px;
+    color: black;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progress.blue .progress-bar{
+    border-color: #049dff;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #ed687c;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 1s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+.progress.red .progress-bar{
+    border-color: #bc1a1a;
+}
+.progress.red .progress-left .progress-bar{
+    animation: loading-6 1.2s linear forwards 1.8s;
+}
+.progress.orange .progress-bar{
+    border-color: #f78e06;
+}
+.progress.orange .progress-left .progress-bar{
+    animation: loading-7 1.4s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(130deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(150deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(160deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(138deg);
+    }
+}
+@keyframes loading-6{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(115deg);
+    }
+}
+@keyframes loading-7{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+} 
+
+
+/* services */
+  .column {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 4px 6px 8px 3px grey;
+  }
+  .hending1{
+    width: 200px;
+    color: white;
+    background-color: #141414;
+    box-shadow: 4px 6px 8px 3px grey;
+    
+}
+@media (max-width: 768px) {
+    .hending1{
+        width: 150px;
+    }
+  }
+  .co {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  @media screen and (max-width: 600px) {
+    .co {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  .ro {
+      margin: 0 -15px;
+      padding: 50px;
+     background-color: #049dff;
+}
+ .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .ca {
+    padding: 16px;
+    text-align: center;
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+  }
+  .ca:hover{
+      border: 5px solid black;
+      background-color: black;
+      box-shadow: 0px 0px 13px 14px white;
+  }
+  .ic {
+      font-size:50px;
+  }
+  
+  
+
+  /* work */
+  .column1{
+    width: 100%;
+    padding: 20px;
+    box-shadow: 4px 6px 8px 3px grey;
+   
+  }
+  .card{
+    position: relative;
+   }
+   .overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    transform: scale(0);
+    transition: .3s ease;
+    background-color: #99e0cf;
+  }
+  .card:hover .overlay {
+    transform: scale(1);
+  }
+  .filterDiv {
+    float: left;
+    width: 445px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    border: 1px solid #049dff;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  @media (max-width: 768px) {
+    .btn{
+        margin-top: 5px;
+    }
+  }
+  .btn:hover {
+    background-color: #049dff;
+  }
+  
+  .btn.active {
+    background-color: #09459e;
+    color: white;
+  }
+  
+
+  /* contact */
+  .control{
+      border-radius: 40px;
+  }
+
+  /* footer */
+  .main-footer{
+      width: 220vh;
+      height: 10vh;
+      margin-left: -15px;
+      background-color: black;
+  }
+  @media (max-width: 768px) {
+    .main-footer{
+        margin-left: -150px;
+        width: 100vh;
+        height: 20vh;
+    }
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <style>
+       html, body { height: 100%; }
+       body {
+  background:radial-gradient(ellipse at center, white 0%, white 35%, lightgreen 100%);
+  overflow: hidden;
+}
+ .stage {
+     
+  border-radius: 6px;
+  height: 200px;
+  position: relative;
+  min-width: 900px;
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 250px;
+    top: 600px;
+  }
+  50%{
+      left:550px;
+      top: 0;
+  }
+  75%{
+      left: 750px;
+      top: 600px;
+  }
+  100% {
+    left: 950px;
+    top: 0;
+  }
+}
+.ball {
+  background: #2d5cb3;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+    </style>
+</head>
+<body style="text-align: center;">
+    <div class="stage">
+        <figure class="ball"></figure>
+      </div>
+    
+</body>
+</html>
