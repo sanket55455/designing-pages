@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+
+
+$BLUE: #3a77b9;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  .font_blue {
+    color: $BLUE;
+  }
+
+  .bg_blue {
+    background-color: $BLUE;
+  }
+
+  .cursor_pointer {
+    cursor: pointer;
+  }
+
+  .mat-form-field-required-marker {
+    color: red;
+  }
+
+  .mat-error {
+    font-size: 10px;
+  }
+
+  .card-header {
+    padding: 0.1rem 1.25rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: normal;
+  }
+
+  .card-body {
+    padding: 10px;
+    padding-bottom: 5px;
+  }
+
+  .mat-form-field.pb_0 {
+    .mat-form-field-wrapper {
+      padding-bottom: 0px;
+    }
+  }
+
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #737373;
+  }
+
+  .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline {
+    color: #737373;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+   // border: 1px solid #d4d3d3;
+  }
+  .mat-input-element:disabled {
+    color: rgba(0, 0, 0, 0.911);
+}
+
+  // --------------------------------
+  .btn_primary {
+    border: 1px solid transparent !important;
+    color: #ffffff !important;
+    background-color: #028383 !important;
+  }
+
+  .btn_secondary {
+    border: 1px solid #6295b6 !important;
+    color: #028383 !important;
+    background-color: #dddddd !important;
+  }
+
+   //-------------------
+  .table{
+    text-align: center
+   }
+  th, td{
+    font-size: 12px;
+  }  
+  table.table-sm th {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-right: .3rem;
+  }
+
+  
+}

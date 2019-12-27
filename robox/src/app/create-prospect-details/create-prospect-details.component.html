@@ -1,0 +1,252 @@
+<div class="card-from mt-2">
+  <div class="card" style="border: 1px solid #45afaf;">
+    <div class="card-header" style="background-color: #45afaf;
+                    border: 1px solid #45afaf;">
+      <p class="mb-0" style="font-size: 13px;">Prospect Details</p>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="quotationForm" [style.fontSize.px]="10">
+        <div class="row">
+
+          <div class="col-lg-2">
+            <mat-form-field class="w-100" appearance="outline">
+              <mat-label>Prospect Code</mat-label>
+              <input matInput placeholder="Prospect Code" formControlName="prospectCode">
+              <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Prospect Type</mat-label>
+              <mat-select formControlName="prospectType">
+                <mat-option *ngFor="let prospect of prospects" [value]="prospect">{{prospect}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Company Name</mat-label>
+              <input matInput placeholder="Company Name" formControlName="companyName">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>First Name</mat-label>
+              <input matInput placeholder="First Name" formControlName="firstName">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Middle Name</mat-label>
+              <input matInput placeholder="Middle Name" formControlName="middleName">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Last Name</mat-label>
+              <input matInput placeholder="Last Name" formControlName="lastName">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Father Name</mat-label>
+              <input matInput placeholder="Father Name" formControlName="fatherName">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Mobile No.</mat-label>
+              <input matInput placeholder="Mobile No." formControlName="mobileNumber" minlength="10" maxlength="10"
+                (keypress)=keyPress($event) appBlockCopyPaste>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>WhatsApp No.</mat-label>
+              <input matInput placeholder="WhatsApp No." formControlName="whatsAppNumber" maxlength="10"
+                (keypress)=whatsapp($event) appBlockCopyPaste>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Alternate Mobile No.</mat-label>
+              <input matInput placeholder="Alternate Mobile No." formControlName="alternateMobileNumber" maxlength="10"
+                (keypress)=alternet($event) appBlockCopyPaste>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+              <div class="d-flex bd-highlight">
+                <div class="pr-1 w-25 flex-fill bd-highlight">
+                  <mat-form-field appearance="outline">
+                    <mat-label>STD</mat-label>
+                    <input type="tel" matInput placeholder="STD" formControlName="std">
+                  </mat-form-field>
+                </div>
+                <div class="w-75 flex-fill bd-highlight">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Telephone No.</mat-label>
+                    <input type="tel" matInput placeholder="Telephone No." formControlName="telephoneNo">
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Email Id</mat-label>
+              <input matInput placeholder="Email Id" formControlName="emailId">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Address 1</mat-label>
+              <input matInput placeholder="Address 1" formControlName="address1">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Address 2</mat-label>
+              <input matInput placeholder="Address 2" formControlName="address2">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Address 3</mat-label>
+              <input matInput placeholder="Address 3" formControlName="address3">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2 w-100">
+            <mat-form-field appearance="outline">
+              <mat-label>Pin Code</mat-label>
+              <input matInput placeholder="Pin Code" formControlName="pinCode">
+              <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+          </div>
+
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline" class="w-100">
+              <mat-label>Post Office</mat-label>
+              <mat-select formControlName="postOffice">
+                <mat-option *ngFor="let postoffice of postoffices" [value]="postoffice">{{postoffice}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Tehsil/Taluka/Mandal</mat-label>
+              <input matInput placeholder="Tehsil/Taluka/Mandal" formControlName="tehsil">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>District</mat-label>
+              <input matInput placeholder="District" formControlName="district">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>City</mat-label>
+              <input matInput placeholder="City" formControlName="city">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>State</mat-label>
+              <input matInput placeholder="State" formControlName="state">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Country</mat-label>
+              <input matInput placeholder="Country" formControlName="country">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Preferred language</mat-label>
+              <input matInput placeholder="Preferred language" formControlName="language">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline" class="w-100">
+              <input matInput [matDatepicker]="picker5" placeholder="Date of Birth" formControlName="dob">
+              <mat-datepicker-toggle matSuffix [for]="picker5"></mat-datepicker-toggle>
+              <mat-datepicker #picker5></mat-datepicker>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline" class="w-100">
+              <input matInput [matDatepicker]="picker6" placeholder="Anniversary Date" formControlName="aniversarydate">
+              <mat-datepicker-toggle matSuffix [for]="picker6"></mat-datepicker-toggle>
+              <mat-datepicker #picker6></mat-datepicker>
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>GST No.</mat-label>
+              <input matInput placeholder="GST No." formControlName="gstno">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>PAN No.</mat-label>
+              <input matInput placeholder="PAN No." formControlName="panno">
+            </mat-form-field>
+          </div>
+
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Product</mat-label>
+              <input matInput placeholder="product" formControlName="product">
+            </mat-form-field>
+          </div>
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Series</mat-label>
+              <input matInput placeholder="series" formControlName="series">
+            </mat-form-field>
+          </div>
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Model</mat-label>
+              <input matInput placeholder="model" formControlName="model">
+            </mat-form-field>
+          </div>
+          <div class="col-lg-2">
+            <mat-form-field appearance="outline">
+              <mat-label>Variant</mat-label>
+              <input matInput placeholder="variant" formControlName="variant">
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

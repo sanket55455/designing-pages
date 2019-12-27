@@ -1,0 +1,176 @@
+<app-navbar></app-navbar>
+<div class="container-fluid mb-3" style="margin-top: 80px;">
+    <div class="card-from ">
+        <div class="card">
+            <div class="card-header">
+                <p class="mb-0">Goods Receipt Note</p>
+            </div>
+            <div class="card-body">
+
+                <form [formGroup]="quotationForm" [style.fontSize.px]="10">
+                    <div class="row">
+
+                        <div class="col-lg-2">
+                            <mat-form-field class="w-100" appearance="outline">
+                                <mat-label>GRN Type</mat-label>
+                                <mat-select (selectionChange)="enquiryCreateForm($event)" placeholder="GRN Type"
+                                    formControlName="quotationno">
+                                    <mat-option *ngFor="let option of grnType" [value]="option">
+                                        {{option?.no}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <input matInput [max]="tomorrow" [matDatepicker]="picker1" placeholder="GRN Date"
+                                    formControlName="enquiryDate">
+                                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                <mat-datepicker #picker1></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field class="w-100" appearance="outline">
+                                <mat-label>Supplier Type</mat-label>
+                                <mat-select (selectionChange)="enquiryCreateForm($event)" placeholder="Supplier Type"
+                                    formControlName="suppliertype">
+                                    <mat-option *ngFor="let option of supplierType" [value]="option">
+                                        {{option}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field class="w-100" appearance="outline">
+                              <mat-label>Purchase Order</mat-label>
+                              <input matInput placeholder="Purchase Order" formControlName="suppliername">
+                              <mat-icon matSuffix>search</mat-icon>
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-2">
+                            <mat-form-field class="w-100" appearance="outline">
+                              <mat-label>Invoice Number</mat-label>
+
+                              <mat-select (selectionChange)="invoiceNumberForm($event)" placeholder="Invoice Number"
+                              formControlName="invoicenumber">
+                              <mat-option *ngFor="let option of invoiceNumber" [value]="option">
+                                  {{option}}
+                              </mat-option>
+                          </mat-select>
+
+                              <!-- <input matInput placeholder="Invoice Number" formControlName="invoicenumber" required> -->
+                              <mat-icon matSuffix>search</mat-icon>
+                            </mat-form-field>
+                          </div>
+
+                          <div class="col-lg-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Supply Type</mat-label>
+                                <input matInput placeholder="Supply Type" formControlName="supplytype">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Mode of Transport</mat-label>
+                                <input matInput placeholder="Mode of Transport" formControlName="modeoftransport">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Transporter</mat-label>
+                                <input matInput placeholder="Transporter" formControlName="transporter">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <input matInput [min]="today" [matDatepicker]="picker2"
+                                    placeholder="Invoice Date" formControlName="invoicedate">
+                                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                <mat-datepicker #picker2></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Invoice Value</mat-label>
+                                <input matInput placeholder="Invoice Value" formControlName="invoicevalue">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>GRN Done By</mat-label>
+                                <input matInput placeholder="GRN Done By" formControlName="grndoneby">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>No.of Boxes Sent</mat-label>
+                                <input matInput placeholder="No.of Boxes Sent" formControlName="noofboxessent">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>No.of Boxes Received</mat-label>
+                                <input matInput placeholder="No.of Boxes Received" formControlName="noofboxesreceived" required>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Receipt value</mat-label>
+                                <input matInput placeholder="Receipt value" formControlName="receiptvalue">
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <input required matInput [min]="today" [matDatepicker]="picker3"
+                                    placeholder="Goods Receipt Date" formControlName="goodsreceiptdate" >
+                                <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                                <mat-datepicker #picker3></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Store</mat-label>
+                                <mat-select formControlName="store">
+                                    <mat-option *ngFor="let store of stores" [value]="store">{{store}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="card-body">
+                    <!-- <app-create-prospect-details [proDetail]="proDetail"></app-create-prospect-details> -->
+                    <app-amount-table></app-amount-table>
+                    <div class=" text-center mt-2 pb-2">
+                        <button type="button" class="btn btn_primary pl-3 pr-3"> Submit
+                        </button>
+                        <button type="button" class="btn btn_secondary pl-3 pr-3 ml-3 " disabled> View PDF
+                        </button>
+                        <button type="button" class="btn btn_secondary pl-3 pr-3 ml-3" disabled> Print
+                        </button>
+                        <button type="button" class="btn btn_primary pl-3 pr-3 ml-3"> Clear
+                        </button>
+                        <button type="button" class="btn btn_primary pl-3 pr-3 ml-3"> Exit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

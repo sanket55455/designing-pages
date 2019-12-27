@@ -1,0 +1,13 @@
+<mat-toolbar class="navbar fixed-top">
+    <button mat-icon-button id="menu">
+        <!-- (click)="minimizeSidebar()" -->
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span><a [routerLink]="[ '' ]"></a></span>
+    <span class="spacer"></span>
+  
+    <div class="border-right px-2">
+      <small class="text-white" style="font-size: 13px;">{{todayDate | date : 'dd MMMM, yyyy, h:mm a' }}</small>
+    </div>
+  
+  </mat-toolbar>

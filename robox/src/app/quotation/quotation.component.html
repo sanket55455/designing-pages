@@ -1,0 +1,162 @@
+<app-navbar></app-navbar>
+<div class="container-fluid" style="margin-top: 80px;">
+    <div class="row" style="margin-bottom: -20px;">
+        <div class="col-lg-12">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <p class="font-weight-bold" style="color: #354052">
+                        Quotation
+                    </p>
+                </div>
+                <div>
+                    <a [routerLink]="[ './create' ]" class="font-weight-bold">
+                        <u>Create Quotation </u>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<div class="card-from mt-3 mb-3">
+        <div class="card">
+            <div class="card-header">
+                <p class="mb-0"> Search Quotation</p>
+            </div>
+            <div class="card-body">
+    
+                <form [formGroup]="searchQuotation" [style.fontSize.px]="10">
+                    <div class="row">
+    
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Quotation No.</mat-label>
+                                <input matInput placeholder="Quotation No." formControlName="quotationno">
+                                <mat-icon matSuffix>search</mat-icon>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Source</mat-label>
+                                <mat-select formControlName="sources">
+                                    <mat-option *ngFor="let source of sources" [value]="source">{{source}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Enquiry Status</mat-label>
+                                <mat-select formControlName="enquries">
+                                    <mat-option *ngFor="let enquiry of enquries" [value]="enquiry">{{enquiry}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Sales Person</mat-label>
+                                <mat-select formControlName="sales">
+                                    <mat-option *ngFor="let sale of sales" [value]="sale">{{sale}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Product</mat-label>
+                                <mat-select formControlName="products">
+                                    <mat-option *ngFor="let product of products" [value]="product">{{product}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Series</mat-label>
+                                <mat-select formControlName="series">
+                                    <mat-option *ngFor="let item of items" [value]="item">{{item}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Model</mat-label>
+                                <mat-select formControlName="models">
+                                    <mat-option *ngFor="let model of models" [value]="model">{{model}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Sub Model</mat-label>
+                                <mat-select formControlName="submodels">
+                                    <mat-option *ngFor="let submodel of submodels" [value]="submodel">{{submodel}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Variant</mat-label>
+                                <mat-select formControlName="variants">
+                                    <mat-option *ngFor="let variant of variants" [value]="variant">{{variant}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field class="w-100" appearance="outline">
+                              <mat-label>Item No.</mat-label>
+                              <input matInput placeholder="Item No." formControlName="itemNo" [matAutocomplete]="autoItemNo">
+                              <mat-autocomplete #autoItemNo="matAutocomplete">
+                                <mat-option *ngFor="let option of getItemNo?.result" [value]="option?.itemNo">
+                                  {{option?.itemNo}}
+                                </mat-option>
+                              </mat-autocomplete>
+                              <mat-icon matSuffix>search</mat-icon>
+                            </mat-form-field>
+                          </div>
+                        <div class="col-lg-2">
+                            <mat-form-field class="w-100">
+                                <input matInput [max]="tomorrow" [matDatepicker]="picker" placeholder="Quotation From Date"
+                                    formControlName="fromdate">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+    
+                        <div class="col-lg-2">
+                            <mat-form-field class="w-100">
+                                <input matInput [min]="today" [matDatepicker]="picker1" placeholder="Quotation To Date"
+                                    formControlName="todate">
+                                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                <mat-datepicker #picker1></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+    
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="mx-auto text-center">
+                            <button type="button" class="btn pl-3 pr-3 btn_primary">Search </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+       

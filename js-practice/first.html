@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+        .card {
+            box-shadow: 0px 0px 5px 1px;
+            margin-top: 20px;
+        }
+
+        .button {
+            /* width: 65px;
+                    height: 35px;
+                    background-color: #220773;
+                    color: white;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 5px 1px; */
+
+
+            cursor: pointer;
+            height: 45px;
+            width: 80px;
+            margin: 0 auto;
+            color: white;
+            background-color: #220773;
+            border: 4px solid white;
+            box-shadow: 0px 0px 8px 3px #220773;
+        }
+
+        .title {
+            background-color: #220773;
+            color: white;
+        }
+
+        .usrInput {
+            /* border: 1px solid black; */
+            outline: none;
+            border: none;
+            display: inline;
+            width: 50%;
+            margin-left: 8px;
+        }
+
+        .usrInputClr {
+            color: red;
+            /* border: 1px solid black; */
+            outline: none;
+            border: none;
+            display: inline;
+            width: 50%;
+            margin-left: 8px;
+        }
+
+        p {
+            vertical-align: middle;
+        }
+
+        span {
+            display: inline;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="card-body title">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body ">
+                        <div class="button mx-auto">
+                            <p class="text-center pt-1">Sign Up</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="card-body title">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="button mx-auto">
+                            <p class="text-center pt-1">Sign Up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="card-body title">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="button mx-auto">
+                            <p class="text-center pt-1">Sign Up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="button" data-toggle="modal" data-target="#exampleModal">
+                <p class="text-center pt-1">Custom</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="button" data-toggle="modal" data-target="#exampleModal1">
+                <p class="text-center pt-1">Add</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="card-body title">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><input class="usrInput" id="dataPlan" type="text"
+                                    placeholder="Data Plan"></li>
+                            <li class="list-group-item"><input class="usrInput" id="emails" type="text"
+                                    placeholder="Emails"></li>
+                            <li class="list-group-item"><input class="usrInput" id="usersInclude" type="text"
+                                    placeholder="Users Include"></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="customClick()" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ********************************* -->
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="card-body title">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><input class="usrInput" id="dataPlan1" type="text"
+                                    placeholder="Data Plan"></li>
+                            <li class="list-group-item"><input class="usrInput" id="emails1" type="text"
+                                    placeholder="Emails"></li>
+                            <li class="list-group-item"><input class="usrInput" id="usersInclude1" type="text"
+                                    placeholder="Users Include"></li>
+                            <li class="list-group-item"><input class="usrInput" id="finalRate" type="text"
+                                    placeholder="Final Rate"></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="saveData()" class="btn btn-primary" data-dismiss="modal">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************************************** -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body title">
+                        <h5 class="card-title">New Plan</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li style="display: inline" class="list-group-item"><span>Data Plan</span><input
+                                class="usrInputClr" id="dataPlan2" type="text"></li>
+                        <li class="list-group-item"><span>Emails</span><input class="usrInputClr" id="emails2"
+                                type="text">
+                        </li>
+                        <li class="list-group-item"><span>Users Include</span><input class="usrInputClr"
+                                id="usersInclude2" type="text"></li>
+                        <li class="list-group-item"><span>Final Rate</span><input class="usrInputClr" id="finalRate2"
+                                type="text"></li>
+                    </ul>
+
+                    <div class="card-body">
+                        <div class="button mx-auto">
+                            <p class="text-center pt-1">Sign Up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="divId">
+
+    </div>
+    <!-- <input type="checkbox" name="checkbox" id="" placeholder="checkbox"><br>
+<input type="color" name="color" id="" placeholder="color"><br>
+<input type="date" name="date" id="" placeholder="date"><br>    
+<input type="datetime" name="datetime" id="" placeholder="datetime"><br>
+<input type="email" name="email" id="" placeholder="email"><br>
+<input type="file" name="file" id="" placeholder="file"><br>
+<input type="hidden" name="hidden" placeholder="hidden"><br>
+<input type="image" src="./image" alt="image not supported"><br>
+<input type="number" name="number" id="" placeholder="number"><br>
+<input type="password" name="password" id="" placeholder="password"><br>
+<input type="radio" name="radio" id="" placeholder="radio"><br>
+<input type="range" name="range" id="" placeholder="range"><br>
+<input type="reset" value="reset" placeholder="reset"><br>
+<input type="search" name="search" id="" placeholder="search"><br>
+<input type="submit" value="submit" placeholder="search"><br>
+<input type="tel" name="tel" placeholder="tel"><br>
+<input type="time" name="time" placeholder="time"><br>
+<input type="url"  name="url" placeholder="url"><br>
+<input type="week"  name="week" placeholder="week">  
+<div style="cursor: pointer; background-color: red; width: 40px; height: 20px;">  -->
+
+
+</body>
+<script src="./main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+</html>

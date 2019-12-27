@@ -1,0 +1,207 @@
+<form [formGroup]="quotationFrom" [style.fontSize.px]="10">
+  <div class="table-responsive mt-3">
+    <table class="table table-bordered table-sm">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col" colspan="18" style="visibility:hidden"></th>
+            <th scope="col" colspan="2">Total Received</th>
+            <th scope="col" colspan="2">Received Short</th>
+            <th scope="col" colspan="2">Received Damage</th>
+            <th scope="col" colspan="2">Net Received</th>
+        </tr>
+        <tr>
+          <th scope="col">Sr.No.</th>
+          <th scope="col">ACCPAC Order No.</th>
+          <th scope="col">DMS PO No.</th>
+          <th scope="col">Item No.</th>
+          <th scope="col">Item Description</th>
+          <th scope="col">Bin Location</th>
+          <th scope="col">HSN Code</th>
+          <th scope="col">Unit Price</th>
+          <th scope="col">Invoice Qty.</th>
+          <th scope="col">Balanced Qty.</th>
+          <th scope="col">Assessable Value</th>
+          <th scope="col">Discount</th>
+          <th scope="col">CGST%</th>
+          <th scope="col">CGST Amount</th>
+          <th scope="col">SGST%</th>
+          <th scope="col">SGST Amount</th>
+          <th scope="col">IGST%</th>
+          <th scope="col">IGST Amount</th>
+          <th scope="col">Qty.</th>
+          <th scope="col">Value</th>
+          <th scope="col">Qty.</th>
+          <th scope="col">Value</th>
+          <th scope="col">Qty.</th>
+          <th scope="col">Value</th>
+          <th scope="col">Qty.</th>
+          <th scope="col">Value</th>
+          <th scope="col">Delete</th>
+
+
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of amountTableValue; let i = index">
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.srNo" formControlName="itemDescription"
+                (change)="myFn($event.target.value, row)">
+              <!-- <p formControlName="srNo" (change)="myFn($event.target.value, row)">{{row.srNo}}</p> -->
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.ACCPAC" formControlName="ACCPAC">
+              <!-- <p formControlName="color"></p> -->
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.DMS" formControlName="DMS">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.itemNo" formControlName="itemNo">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.itmDesc" formControlName="itmDesc" (keypress)="keyPress($event)">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.binLocation" formControlName="binLocation">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.HSNCode" formControlName="HSNCode">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.unitPrice" formControlName="unitPrice">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.invoiceQty" formControlName="invoiceQty">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.balanceQty" formControlName="balanceQty">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.assessableValue" formControlName="assessableValue">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.discount" formControlName="discount">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.CGST" formControlName="CGST">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.CGSTAmount" formControlName="CGSTAmount">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.SGST" formControlName="SGST">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.SGSTAmount" formControlName="SGSTAmount">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.IGST" formControlName="IGST">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.IGSTAmount" formControlName="IGSTAmount">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.totalReceivedQty" formControlName="totalReceivedQty">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.totalReceivedValue" formControlName="totalReceivedValue">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.receivedShortQty" formControlName="receivedShortQty">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.receivedShortValue" formControlName="receivedShortValue">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.receivedDamageQty" formControlName="receivedDamageQty">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.receivedDamageValue" formControlName="receivedDamageValue">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.notReceivedQty" formControlName="notReceivedQty">
+
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="outline" [style.fontSize.px]="10">
+              <input matInput type="text" [value]="row.notReceivedValue" formControlName="notReceivedValue">
+
+            </mat-form-field>
+          </td>
+          <!-- <td>
+            <button type="button" class="btn btn_primary pl-3 pr-3" (click)="onBtnClick(item)"> X</button>
+          </td> -->
+        </tr>
+
+      </tbody>
+    </table>
+    <button type="button" class="btn btn_primary pl-3 pr-3" (click)="onSubmitClick()"> Submit</button>
+
+  </div>
+</form>
